@@ -1,0 +1,4 @@
+class Aritist
+
+  @@all = []
+end
