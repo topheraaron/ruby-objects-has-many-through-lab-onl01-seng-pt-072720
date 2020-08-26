@@ -19,4 +19,8 @@ class Patient
   def appointments
     Appointment.all.select { |appointment| appointment.patient }
   end
+
+  def doctors
+    appointments.collect { |appointment| appointment.doctor }
+  end
 end
